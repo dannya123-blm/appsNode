@@ -14,6 +14,7 @@ export default function MyApp() {
   // State to track visibility of different sections
   const [showLogin, setShowLogin] = useState(false);
   const [showDash, setShowDash] = useState(false);
+  const [showReg, setShowReg] = useState(false);
   const [showFirstPage, setShowFirstPage] = useState(true);
 
   // Handlers to control what section to show
@@ -35,6 +36,13 @@ export default function MyApp() {
     setShowDash(false);
   };
 
+  const runShowReg = () => {
+    setShowDash(false);
+    setShowLogin(false);
+    setShowFirstPage(false);
+    setShowReg(true);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -45,9 +53,10 @@ export default function MyApp() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             MyApp
           </Typography>
-          <Button color="inherit" onClick={runShowFirst}>First</Button>
+          <Button color="inherit" onClick={runShowFirst}>Main</Button>
           <Button color="inherit" onClick={runShowLogin}>Login</Button>
           <Button color="inherit" onClick={runShowDash}>Dashboard</Button>
+          <Button color="inherit" onClick={runShowReg}>Register</Button>
         </Toolbar>
       </AppBar>
 
@@ -69,6 +78,13 @@ export default function MyApp() {
       {showDash && (
         <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
           Let's pretend this is the dashboard!
+        </Box>
+      )}
+
+       {/* Register Section */}
+       {showReg && (
+        <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+          
         </Box>
       )}
     </Box>
