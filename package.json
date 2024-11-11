@@ -12,7 +12,11 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^6.1.5",
+<<<<<<< HEAD
     "@mui/material": "^6.1.5",
+=======
+    "@mui/material": "^6.1.6",
+>>>>>>> d3e580abf378ba60d39800aaa56c34d61b0f1594
     "mongodb": "^6.10.0",
     "next": "15.0.0",
     "react": "^18.3.1",
