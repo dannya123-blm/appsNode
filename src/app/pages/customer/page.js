@@ -10,6 +10,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
+
 export default function MyApp() {
   // State to track visibility of different sections
   const [showLogin, setShowLogin] = useState(false);
