@@ -14,7 +14,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { useState } from 'react';
 
-export default function Register() {
+export default function Registration() {
   // State to track visibility of different sections
   const [showLogin, setShowLogin] = useState(false);
   const [showReg, setShowReg] = useState(false);
